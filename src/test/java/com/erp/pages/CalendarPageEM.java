@@ -9,9 +9,6 @@ import java.util.List;
 
 public class CalendarPageEM extends BasePage{
 
-    public CalendarPageEM() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
     @FindBy(xpath = "//span[normalize-space()='Calendar']")
     public WebElement calendarBtn;

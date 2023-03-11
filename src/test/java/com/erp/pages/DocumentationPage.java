@@ -10,9 +10,6 @@ import java.util.List;
 
 public class DocumentationPage extends BasePage{
 
-    public DocumentationPage(){
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
     public WebElement userBtn;

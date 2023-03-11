@@ -7,9 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RepairsPage extends BasePage{
 
-    public RepairsPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
     @FindBy(xpath = "//span[normalize-space()='Repairs']")
     public WebElement repairsModule;

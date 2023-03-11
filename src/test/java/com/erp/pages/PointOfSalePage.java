@@ -10,9 +10,6 @@ import java.util.List;
 
 public class PointOfSalePage extends BasePage {
 
-    public PointOfSalePage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
     @FindBy(xpath = "//a[@class='oe_menu_toggler']//span[@class='oe_menu_text'][normalize-space()='Point of Sale']")
     public WebElement pointOfSaleBtn;

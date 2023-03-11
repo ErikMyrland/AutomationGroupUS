@@ -9,9 +9,6 @@ import java.util.List;
 
 public class EventManagerPageEM extends BasePage{
 
-    public EventManagerPageEM() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
     @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li/a/span")
     public List<WebElement> ModulesAccessButtons;

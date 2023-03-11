@@ -9,9 +9,6 @@ import java.util.List;
 
 public class SalesPage extends BasePage {
 
-    public SalesPage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
     @FindBy(xpath = "//span[normalize-space()='Sales']")
     public WebElement sales;
