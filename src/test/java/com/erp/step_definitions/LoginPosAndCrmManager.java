@@ -2,6 +2,7 @@ package com.erp.step_definitions;
 
 import com.erp.pages.BasePage;
 import com.erp.pages.BasePageWithNameOfUser;
+import com.erp.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -20,7 +21,7 @@ public class LoginPosAndCrmManager extends BasePage {
     @Then("account holder name should be {string}")
     public void account_holder_name_should_be(String userName) {
         //System.out.println("basePageWithNameOfUser.displayedNameOfTheUser.getText() = " + basePageWithNameOfUser.displayedNameOfTheUser.getText());
-
+        BrowserUtils.sleep(1);
         Assert.assertTrue(basePageWithNameOfUser.displayedNameOfTheUser.getText().contains(userName));
 
     }
